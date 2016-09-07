@@ -1,0 +1,22 @@
+{
+  "name": "myui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "server": "node server.js",
+     
+      "start": "concurrently \"npm run tsc:w\" \"npm run server\" ",
+     "tsc": "tsc",
+    "tsc:w": "tsc -w -p /home/soprano/test/ui"
+  },
+  "author": "",
+  "license": "ISC",
+   "dependencies": {
+    "concurrently": "^2.2.0",
+    "express": "^4.14.0"
+  }
+   
+}
+
+
